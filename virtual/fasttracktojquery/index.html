@@ -11,14 +11,16 @@
       h1 {
         color:green;
       }
+      #header-3{
 
+      }
     </style>
   </head>
 <body>
-  <h1>Hello, world!</h1>
-  <h1>Hello, world!</h1>
-  <h1>Hello, world!</h1>
-  <h1>Hello, world!</h1>
+  <h1 class="header">Hello, world!</h1>
+  <h1 class="header">Hello, world!</h1>
+  <h1 class="header" id="header-3">Hello, world!</h1>
+  <h1 class="header">Hello, world!</h1>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -33,9 +35,11 @@
       //$('body').css("background-color", "red")
 
       setTimeout(function(){
-        $('body').css("background-color", "red")
+        // $('body').css("background-color", "red")
         $('h1').css('color', 'purple')
         $('h1:nth-child(2)').text("It's a Frank")
+        $('#header-3').text("I'm header 3!")
+        $('.header').css("background-color", "yellow").css("padding", "30px")
       }, 2000) // in ms
     })
     
